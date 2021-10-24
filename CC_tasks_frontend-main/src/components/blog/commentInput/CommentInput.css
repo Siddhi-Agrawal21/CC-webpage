@@ -1,0 +1,25 @@
+.commentInput {
+  display: flex;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.commentInput > .MuiTextField-root {
+  align-self: flex-end;
+}
+
+.commentInput > .MuiIconButton-root {
+  color: white;
+  background-color: teal;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.commentInput > .MuiIconButton-root:hover {
+  filter: brightness(80%);
+  transform: translateX(-5px);
+  background-color: teal;
+}

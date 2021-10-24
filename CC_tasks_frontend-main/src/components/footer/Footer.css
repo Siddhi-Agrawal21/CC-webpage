@@ -1,0 +1,55 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  color: black;
+  background-color: #ddf3b3;
+  width: 100%;
+}
+
+h2 {
+  background: #4d5d30;
+  text-align: center;
+  color: chartreuse;
+}
+
+.social svg {
+  color: #000 !important;
+  font-size: xx-large;
+}
+#Heading {
+  font-size: 23px;
+  color: #4d5d30;
+  font-weight: 700;
+}
+
+.col {
+  height: 67px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 5px;
+  text-align: left;
+  border: 1px solid black;
+}
+
+span {
+  color: red;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#major-link {
+  color: #4d5d30;
+}

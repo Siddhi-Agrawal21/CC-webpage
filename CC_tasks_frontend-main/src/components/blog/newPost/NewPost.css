@@ -1,0 +1,142 @@
+.newPost {
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.newPost__photo {
+  height: 100vh;
+  width: 40vw;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.newPost__container {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.newPost__container > .MuiTextField-root {
+  margin-bottom: 10px;
+}
+
+.newPost__container > .MuiButton-root {
+  width: 25%;
+  align-self: flex-end;
+  font-size: 18px;
+  color: white;
+  background-color: #1976d2;
+  margin: 10px 0;
+  transition: all 0.5s;
+  text-transform: none;
+}
+
+.newPost__container > .MuiButton-root:hover {
+  background-color: #1976d2;
+  transform: translateX(-10px);
+  filter: brightness(80%);
+}
+
+.newPost__container textarea {
+  flex: 1;
+  font-size: 16px;
+  font-family: Roboto;
+  padding: 5px;
+  border-radius: 3px;
+  max-width: 100%;
+  min-width: 100%;
+  border: 1.5px solid #9a9a9a;
+  outline: 1px solid #fff;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  transition: all 0.5s;
+}
+
+.newPost__container textarea::-webkit-scrollbar {
+  width: 5px;
+}
+
+.newPost__container textarea::-webkit-scrollbar-thumb {
+  background-color: #1976d2;
+}
+
+.newPost__container textarea:focus {
+  border: 1.5px solid #1976d2;
+  outline: 1px solid #1976d2;
+}
+
+.newPost__container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.newPost__container::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+.newPost__container::-webkit-scrollbar-thumb {
+  background-color: grey;
+}
+
+.newPost > .MuiIconButton-root {
+  padding: 5px;
+  transition: all 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.newPost > .MuiIconButton-root:hover {
+  background-color: white;
+  filter: brightness(80%);
+}
+
+.newPost > .MuiIconButton-root:focus {
+  animation: post__btnClick 0.35s linear 1;
+}
+
+.newPost > .MuiIconButton-root:active {
+  animation: none;
+}
+
+.newPost__scrollToTopBtn {
+  transform: scale(0);
+  transition: all 0.2s;
+  animation: post__btnDefault 2s linear infinite !important;
+}
+
+@keyframes post__btnDefault {
+  25% {
+    margin-bottom: 5px;
+  }
+  50% {
+    margin-bottom: 0;
+  }
+  75% {
+    margin-bottom: -5px;
+  }
+}
+
+@keyframes post__btnClick {
+  20% {
+    transform: scale(0.85);
+  }
+  40% {
+    transform: scale(1.15);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+}
